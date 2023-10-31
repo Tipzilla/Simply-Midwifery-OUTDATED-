@@ -1,0 +1,283 @@
+<!-- To Do:-->
+
+<!-- https://www.findyourmidwife.co.nz/midwife/steph+wilkinson -->
+
+<!-- "Don't forget to follow on Facebook!" and implement FB feed somehow -->
+
+<!-- Contact form needs to be functional, will need capcha implementation, can't be done until a domain exists -->
+
+<!-- A section for a interview would be good -->
+
+<!-- Testimonial section will be implemented when I have data -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Midwifery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- header -->
+
+    <header class="header" id="myHeader">
+        
+        <a href="#" class="active"><i class="fa fa-home"></i>  Home </a>
+        <a href="#resources"><i class="fa fa-book"></i> Resources</a>
+        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
+        <i class="fa fa-bars"></i>
+        </a>
+
+    </header>
+
+    <!-- home -->
+
+    <section class="about" id="about">
+
+        <div class="box-container">
+            <a href="#">
+                <img src="images/logo.jpg" width="250">
+            </a>
+        </div>
+
+        <div class="box-container">
+
+            <div class="profile-card">
+                <img src="images/profile-img.jpeg">
+                <h2 class="name">Steph Wilkinson</h2>
+                <p class="title">Simply Midwifery</p>
+                <p class="description">I've been a midwife for too long (37+ years), but I love the work. Well, its not work really because I love making connections and helping people out... No nonsense midwifery based in the Far North of New Zealand. Primary unit birthing and occasional home births. Clinic or home visits. Always do your very best with what you have available!</p>
+            </div>
+
+        </div>
+
+        <div class="slider-container">
+
+            <div class="slider-content">
+            
+                <div class="slider-single">
+                    <img class="slider-single-image" src="https://picsum.photos/id/973/200/300" alt="1"/>
+                </div>
+            
+                <div class="slider-single">
+                    <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2"/>
+                </div>
+            
+                <div class="slider-single">
+                    <img class="slider-single-image" src="https://picsum.photos/id/975/200/300" alt="3"/>
+                </div>
+
+            </div>
+                
+        </div>
+
+    </section>
+
+    <!-- resources -->
+
+    <section class="resources" id="resources">
+
+        <h1 class="heading"><span>Resources</span></h1>
+
+        <div class="tab-buttons">
+            <button class="btn" data-category="all">All</button>
+            <button class="btn" data-category="about-midwives">About Midwives</button>
+            <button class="btn" data-category="parenting-groups">Parenting Groups</button>
+            <button class="btn" data-category="pregnancy-birthing-more">Pregnancy, birthing &amp; more</button>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box" data-category="about-midwives">
+                <a href="https://www.midwife.org.nz/" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-1.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>New Zealand College of Midwives</h3>
+                    <p>You can expect to find information, resources, and services related to midwifery practice, education, and support within New Zealand. It offers details on the organization's mission, members, and the role of midwives in healthcare.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="about-midwives">
+                <a href="https://www.midwiferycouncil.health.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-2.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Midwifery Council of New Zealand</h3>
+                    <p>Find information related to midwifery regulations, licensure, and the standards of practice expected from midwives in New Zealand. It also offers resources for midwifery professionals, students, and the public, including details on certification, licensing requirements, and the role of midwives in the healthcare system.</p>
+                </a>
+            </div>
+
+            <div class="box" data-category="about-midwives">
+                <a href="http://www.health.govt.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-3.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Ministry of Health</h3>
+                    <p>You can typically find updates on healthcare initiatives, health-related news, resources for healthcare professionals, information on public health issues, and details on government programs and services related to health and well-being. It is a valuable resource for individuals, healthcare providers, policymakers, and anyone interested in health matters in New Zealand.</p>
+                </a>
+            </div>
+                
+            <div class="box" data-category="parenting-groups">
+                <a href="http://www.parentscentre.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-4.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Parents Centre</h3>
+                    <p>A resource for parents, offering information, support, and resources related to parenting, child-rearing, and family well-being in New Zealand. The website includes articles, advice, and details about parenting programs and services. It is a valuable destination for parents seeking guidance, community, and information on various aspects of raising children.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="parenting-groups">
+                <a href="http://www.plunket.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-5.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Plunket</h3>
+                    <p>Plunket offers information, guidance, and programs related to child healthcare, parenting support, and family well-being. It is a valuable resource for parents and caregivers seeking information and assistance in raising healthy and happy children.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="pregnancy-birthing-more">
+                <a href="http://www.maternity.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-6.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Maternity Service Consumer Council</h3>
+                    <p>Offering resources, news, and guidance for expectant mothers and individuals seeking information about pregnancy, birthing, and maternity care options. It can be a valuable resource for individuals and families looking for information and support related to maternity services in New Zealand.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="pregnancy-birthing-more">
+                <a href="http://homebirth.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-7.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Homebirth Aotearoa</h3>
+                    <p>Serving as a resource for individuals interested in homebirth as an alternative to traditional hospital birthing. It offers information, resources, and guidance related to the process of giving birth at home, as well as support for those considering or planning a home birth.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="pregnancy-birthing-more">
+                <a href="http://www.lalecheleague.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-8.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>La Leche League</h3>
+                    <p>La Leche League is known for its support of breastfeeding mothers and the promotion of breastfeeding as a natural and healthy way to nourish infants. Providing information, resources, and support for breastfeeding mothers, including articles, advice, and details about local meetings and services.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="pregnancy-birthing-more">
+                <a href="http://www.womens-health.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-9.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>Women's Health Action Trust</h3>
+                    <p>Women's Health Action Trust offers resources, advocacy, and services related to various aspects of women's health, including reproductive health, pregnancy, and birthing. It also provides valuable information, articles, and support for women and healthcare professionals seeking to improve women's health and well-being.</p>
+                </a>
+            </div>
+            
+            <div class="box" data-category="pregnancy-birthing-more">
+                <a href="http://www.babyfriendly.org.nz" target="_blank" class="resource-link">
+                    <div class="resource-container">
+                        <img src="images/resources-img-10.jpg" width="200" class="resource-img">
+                        <span class="go-to-site">Go to site <i class="fas fa-external-link-alt"></i></span>
+                    </div>
+                    <h3>NZ Breastfeeding Alliance</h3>
+                    <p>A valuable resource for individuals and healthcare professionals seeking information, resources, and support related to breastfeeding, infant nutrition, and mother-baby well-being. It offers guidance on breastfeeding-friendly practices, policies, and initiatives in New Zealand.</p>
+                </a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>Contact</span> Me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.7361654192127!2d173.2608663!3d-35.113298400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0974a87bbd5cb1%3A0xb26e8b6c4ff45594!2s30%20Puckey%20Avenue%2C%20Kaitaia%200410!5e0!3m2!1sen!2snz!4v1698392909225!5m2!1sen!2snz" 
+                        width="800" 
+                        height="750" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+            <form action="">
+                <h1 class="title">Get in touch!</h1>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="Subject" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i></button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+
+            <div class="footer-logo">
+
+                <a href="index.html"><img src="images/logo.jpg" width="100"></a>
+
+            </div>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="social-media"><a href="https://www.facebook.com/profile.php?id=100076256790836" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                
+            </ul>
+
+    </footer>
+
+    <hr style="margin-bottom: 20px;">
+
+    <!-- copyright -->
+
+    <p class="copyright">
+
+        &copy; <span id="copyright-year"></span> Simply Midwifery. All rights reserved.
+
+    </p>
+
+        <p class="credits">
+            <a href="https://tipzilla.github.io/" target="_blank">Website created by Hamish Getty <i class="fas fa-external-link-alt"></i></a>
+        </p>
+
+    <!-- link for js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
