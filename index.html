@@ -10,6 +10,8 @@
 
 <!-- Testimonial section will be implemented when I have data -->
 
+<!-- Bug testing on smaller devices, site doesn't scale well for Galaxy Fold -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,15 +25,13 @@
 
     <!-- header -->
 
-    <header class="header" id="myHeader">
-        
-        <a href="#" class="active"><i class="fa fa-home"></i>  Home </a>
-        <a href="#resources"><i class="fa fa-book"></i> Resources</a>
-        <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
-        <i class="fa fa-bars"></i>
+    <header class="header" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
         </a>
-
     </header>
 
     <!-- home -->
@@ -45,6 +45,12 @@
         </div>
 
         <div class="box-container">
+            <a href="#contact">
+                <button class="btn">Get in touch!</button>
+            </a>
+        </div>
+
+        <div class="box-container">
 
             <div class="profile-card">
                 <img src="images/profile-img.jpeg">
@@ -53,26 +59,6 @@
                 <p class="description">I've been a midwife for too long (37+ years), but I love the work. Well, its not work really because I love making connections and helping people out... No nonsense midwifery based in the Far North of New Zealand. Primary unit birthing and occasional home births. Clinic or home visits. Always do your very best with what you have available!</p>
             </div>
 
-        </div>
-
-        <div class="slider-container">
-
-            <div class="slider-content">
-            
-                <div class="slider-single">
-                    <img class="slider-single-image" src="https://picsum.photos/id/973/200/300" alt="1"/>
-                </div>
-            
-                <div class="slider-single">
-                    <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2"/>
-                </div>
-            
-                <div class="slider-single">
-                    <img class="slider-single-image" src="https://picsum.photos/id/975/200/300" alt="3"/>
-                </div>
-
-            </div>
-                
         </div>
 
     </section>
