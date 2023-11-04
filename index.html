@@ -230,13 +230,22 @@
                     
                 </div>
 
-                <form action="">
-                    <h1 class="title">Get in touch!</h1>
-                    <input type="text" placeholder="name" class="box" required>
-                    <input type="email" placeholder="email" class="box" required>
-                    <input type="text" placeholder="Subject" class="box" required>
-                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
+                <form action="https://formsubmit.co/hamishtgetty@gmail.com" method="post">
+
+                    <!-- honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+    
+                    <!-- disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+        
+                    <!-- contact form -->
+                    <input name="name" type="text" id="name" placeholder="name" class="box" required>
+                    <input name="email" type="email" id="email" placeholder="email" class="box" required>
+                    <input name="subject" type="text" id="subject" placeholder="Subject" class="box" required>
+                    
+                    <textarea name="message" id="message" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
                     <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i></button>
+    
                 </form>
 
             </div>
