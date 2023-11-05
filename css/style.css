@@ -442,9 +442,15 @@ hr {
     font-weight: bold;
 }
 
-
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child) {display: none;}
+    .header a.icon {
+      float: right;
+      display: block;
+    }
+}
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .header.responsive {position: relative;}
     .header.responsive .icon {
       position: absolute;
@@ -459,7 +465,6 @@ hr {
 }
 
 @media (max-width:390px) {
-
     .heading {
         margin: 0 3rem;
     }
